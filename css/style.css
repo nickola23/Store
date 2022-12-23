@@ -20,7 +20,67 @@ nav{
 .navul li{
     padding: 10px;
 }
-.logo{
+.navul li:hover{
+    cursor: pointer;
+}
+.logoStore{
     width: 40px;
     height: 40px;
+}
+.logoCart{
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 45px;
+    height: 35px;
+}
+.navDropProducts{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    min-height: 400px;
+}
+.navDropProductsMain{
+    display: flex;
+    flex-direction: row;
+    min-width: 60%;
+    min-height: 100%;
+    padding-top: 10px;
+}
+.navDropProductsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+.navDropHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navDropHeading span{
+    font-size: 26px;
+}
+.navDropImg{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.navDropUl{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navDropUl li{
+    margin: 5px 0 5px 0;
+}
+.flex{
+    display: flex;
 }
