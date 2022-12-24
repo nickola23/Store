@@ -12,9 +12,9 @@ nav{
     justify-content: space-around;
     user-select: none;
     font-family: poppins, sans-serif;
+    font-weight: 500;
     background-color: #ffff;
     width: 100%;
-    padding: 10px 0;
     z-index: 999;
 }
 .navul{
@@ -25,7 +25,7 @@ nav{
     padding: 0;
 }
 .navul li{
-    margin: 10px;
+    padding: 10px;
 }
 .navul li:hover{
     cursor: pointer;
@@ -41,26 +41,27 @@ nav{
     width: 45px;
     height: 35px;
 }
-.navDropProducts{
+.navDropProducts, .navDropStores{
     display: none;
     justify-content: center;
     position: absolute;
     user-select: none;
     height: fit-content;
     font-family: poppins, sans-serif;
+    background-color: white;
     z-index: -1;
-    top: 60px;
+    top: 45px;
     width: 100%;
-    animation: to-bottom 1s forwards;
+    animation: to-bottom 0.5s forwards;
 }
-.navDropProductsMain{
+.navDropMain{
     display: flex;
     flex-direction: row;
     min-width: 60%;
     min-height: 100%;
     padding-top: 10px;
 }
-.navDropProductsContent{
+.navDropContent{
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -71,9 +72,20 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     margin-left: 20px;
     margin-bottom: 15px;
     width: 100%;
+}
+.navDropHeading::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 270px;
+    left: 5px;
+    bottom: -7px;
+    border-radius: 2px;
+    background-color: rgba(206, 205, 205, 0.6);
 }
 .navDropHeading span{
     font-size: 26px;
@@ -108,18 +120,21 @@ nav{
     bottom: 0px;
     height: 2px;
     background-color: black;
-    transition: all ease-in 0.2s;
+    transition: all ease-in-out 0.2s;
     transition-delay: 0.2s;
 }
 .navDropUl li a:hover::before{
-    width: 110%;
+    width: calc(100% + 5px);
 }
 .navDropUl li a:hover{
     color: black;
 }
-/*#products:hover .navDropProducts {
+.navbar:has(#products:hover) .navDropProducts,  .navbar:has(#stores:hover) .navDropStores{
     display: flex;
-}*/
+}
+.navDropProducts:hover, .navDropStores:hover{
+    display: flex;
+}
 .flex{
     display: flex;
 }
