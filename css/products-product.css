@@ -1,0 +1,26 @@
+.product{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: all 0.2s ease-in-out;
+}
+.product:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.productImg{
+    width: 90%;
+    height: auto;
+}
+.productDesc{
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+}
+.productName{
+    font-size: 16px;
+    text-align: center;
+}
+.productPrice{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

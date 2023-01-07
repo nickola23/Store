@@ -36,10 +36,13 @@ main{
     flex-wrap: wrap;
     width: calc(100% - 300px);
     height: fit-content;
-    background-color: greenyellow;
 }
 .product{
-    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
     height: 350px;
     margin: 5px;
     margin-left: 10px;
