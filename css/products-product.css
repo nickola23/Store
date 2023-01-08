@@ -9,6 +9,7 @@
 .productImg{
     width: 90%;
     height: auto;
+    cursor: pointer;
 }
 .productDesc{
     width: 100%;
@@ -23,4 +24,34 @@
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+.productCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.productCart button{
+    height: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: rgb(235, 234, 234);
+    padding: 2px 24px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.productCart button:hover{
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+.addCart{
+    margin-left: 20px;
+    width: 60%;
+}
+.addFav{
+    margin-right: 20px;
+    padding: 0;
 }
